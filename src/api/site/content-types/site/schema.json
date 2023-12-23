@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sites",
+  "info": {
+    "singularName": "site",
+    "pluralName": "sites",
+    "displayName": "Site",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "trails": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trail.trail"
+    }
+  }
+}

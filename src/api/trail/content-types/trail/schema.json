@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trails",
+  "info": {
+    "singularName": "trail",
+    "pluralName": "trails",
+    "displayName": "Trail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "distance": {
+      "type": "decimal"
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "easy",
+        "intermediate",
+        "expert"
+      ]
+    },
+    "open": {
+      "type": "boolean"
+    },
+    "comments": {
+      "type": "blocks"
+    },
+    "last_grooming": {
+      "type": "date"
+    }
+  }
+}
